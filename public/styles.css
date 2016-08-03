@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.app {
+    margin: 0 auto;
+    width: 700px;
+}
+
+.note-list {
+    background-color: #ffffac;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    overflow: auto;
+}
+
+.note-list__header {
+    overflow: auto;
+    margin: 8px 0;
+}
+
+.note-list__search {
+    float: right;
+    display: block;
+    height: 30px;
+    width: 150px;
+    border: dashed 1px black;
+    border-radius: 8px;
+    outline: none;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+.note-list__add-btn {
+    position: absolute;
+    height: 56px;
+    width: 56px;
+    z-index: 2;
+    right: 20px;
+    bottom: 20px;
+    background: #D43A2F;
+    color: white;
+    border-radius: 100%;
+    font-size: 34px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.note-list__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.note {
+    padding: 5px;
+    display: block;
+    border: solid 1px #b4b472;
+    margin-bottom: 10px;
+}
+
+.note__header {
+    overflow: auto;
+}
+
+.note__title {
+    font: bold 16pt sans-serif;
+    display: inline-block;
+    height: 25px;
+    width: 650px;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+    padding: 5px 2px;
+}
+
+.note__title:hover, .note__title:focus {
+    border: dashed 1px black;
+}
+
+.note__text {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
+    margin: 5px 0;
+    outline: none;
+}
+
+.note__text:hover, .note__text:focus {
+    border: dashed 1px black;
+}
+
+.note__remove-btn {
+    font-size: 20px;
+    float: right;
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    height: 20px;
+    width: 20px;
+}
+
+.note__remove-btn:hover {
+    color: darkred;
+}
+
