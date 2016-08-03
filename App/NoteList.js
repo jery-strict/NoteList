@@ -53,8 +53,7 @@ class NoteList extends React.Component {
 NoteList.propTypes = {
     notes: pt.arrayOf(Object).isRequired,
     noteCallbacks: pt.object.isRequired,
-    addNote: pt.func.isRequired,
-    setFilter: pt.func.isRequired
+    addNote: pt.func.isRequired
 };
 
 export default NoteList;
